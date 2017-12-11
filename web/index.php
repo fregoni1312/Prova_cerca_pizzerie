@@ -15,7 +15,7 @@
 			}
 		</script>
 	</head>
-	<font size="4">Pagina per la ricerca di un ristorante</font><br />
+	<font size="6">Pagina per la ricerca di un ristorante</font><br />
 	<body>
 		<?php
 			if(isset($_POST["lim"]))
