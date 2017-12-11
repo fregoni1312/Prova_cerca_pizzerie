@@ -59,7 +59,7 @@
 			echo "</form>";*/
 		
 			echo "<form id='forma' method='post' onsubmit='return controllo_campi();'>";
-			echo " Numero elementi (da 1 a massimo 50):<input type='text' value='$lim' name='lim'id='lim' /><";
+			echo " Numero elementi (da 1 a massimo 50):<input type='text' value='$lim' name='lim'id='lim' />";
 			echo " Citta: <input type='text' value='$cit' name='cit' id='cit' />";
 			echo " Tipologia del locale: <input type='text' value='$que' name='que' id='que' /><br/>";
 			echo " <input type='submit' value='Aggiorna tabella' class='btn'/>";
