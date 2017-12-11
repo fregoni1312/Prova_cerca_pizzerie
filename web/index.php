@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Ricerca</title>
+		<title>Ricerca ristorante</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script>
 			function controllo_campi()
@@ -24,7 +24,7 @@
 			}
 			else
 			{
-				$lim=10;
+				$lim=15;
 			}
 			if(isset($_POST["cit"]))
 			{
@@ -32,7 +32,7 @@
 			}
 			else
 			{
-				$cit="bergamo";
+				$cit="Bergamo";
 			}
 			if(isset($_POST["que"]))
 			{
@@ -40,7 +40,7 @@
 			}
 			else
 			{
-				$que="pizzeria";
+				$que="Pizzeria";
 			}
 		
 			echo "<form id='forma' method='post' onsubmit='return controllo_campi();'><br/>";
@@ -71,26 +71,26 @@
 			# Decodifico la stringa json e la salvo nella variabile $data
 			$data = json_decode($json);
 			# Stampa della tabella delle pizzerie.
-			echo "<table>";
+			echo('<table id="customers" align="center">
+			  <tr>
+				<th>Nome/th>
+				<th>Latitudine</th>
+				<th>Longitudine</th>
+			  </tr>');
+			for($i=0; $i<$lim; $i++)
+			{	
 				echo "<tr>";
-					echo "<th>NOME</th>";
-					echo "<th>LATITUDINE</th>";
-					echo "<th>LONGITUDINE</th>";
+					echo "<td>";
+					echo $data->response->venues[$i]->name;
+					echo "</td>";
+					echo "<td>";
+					echo $data->response->venues[$i]->location->lat;
+					echo "</td>";
+					echo "<td>";
+					echo $data->response->venues[$i]->location->lng;
+					echo "</td>";
 				echo "</tr>";
-				for($i=0; $i<$lim; $i++)
-				{	
-					echo "<tr>";
-						echo "<td>";
-						echo $data->response->venues[$i]->name;
-						echo "</td>";
-						echo "<td>";
-						echo $data->response->venues[$i]->location->lat;
-						echo "</td>";
-						echo "<td>";
-						echo $data->response->venues[$i]->location->lng;
-						echo "</td>";
-					echo "</tr>";
-				}
+			}
 			echo "</table>";
 			# Stampa di eventuali errori
 			echo curl_error($ch);
