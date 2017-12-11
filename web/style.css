@@ -44,7 +44,7 @@ div.table-title {
 
 
 td:last-child {
-  border-right: 0px;
+  border-right: 1px;
 }
 
 th.text-left {
