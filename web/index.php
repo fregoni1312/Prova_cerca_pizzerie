@@ -42,7 +42,7 @@
 			{
 				$que="Pizzeria";
 			}
-		
+		/*
 			echo "<form id='forma' method='post' onsubmit='return controllo_campi();'><br/>";
 			echo "<table>";
 			echo "<tr>";
@@ -55,6 +55,13 @@
 			echo " <td>Cosa stai cercando?: </td><td><input type='text' value='$que' name='que' id='que' /></td><br/>";
 			echo "</tr>";
 			echo "</table>";
+			echo " <input type='submit' value='Aggiorna tabella' class='btn'/>";
+			echo "</form>";*/
+		
+			echo "<form id='forma' method='post' onsubmit='return controllo_campi();'><br/>";
+			echo " Numero elementi (1-50): </td><td><input type='text' value='$lim' name='lim'id='lim' /><";
+			echo " Citta: </td><td><input type='text' value='$cit' name='cit' id='cit' />";
+			echo " Cosa stai cercando?: </td><td><input type='text' value='$que' name='que' id='que' /><br/>";
 			echo " <input type='submit' value='Aggiorna tabella' class='btn'/>";
 			echo "</form>";
 
