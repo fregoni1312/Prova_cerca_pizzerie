@@ -58,7 +58,7 @@
 			echo " <input type='submit' value='Aggiorna tabella' class='btn'/>";
 			echo "</form>";*/
 			
-			echo('<form action="/action_page.php">
+			echo("<form action="/action_page.php">
 			    <label for="fname">Numero elementi (da 1 a massimo 50):</label>
 			    <input type="text" id="lim" name="lim" value='$lim'>
 
@@ -69,7 +69,7 @@
 			    <input type="text" id="que" name="que" value='$que'>
 
 			    <input type="submit" value="Submit">
-			  </form>');
+			  </form>");
 		/*
 		echo('<form action="/action_page.php">
 			    <label for="fname">Numero elementi (da 1 a massimo 50):</label>
