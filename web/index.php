@@ -42,7 +42,7 @@
 			{
 				$que="Pizzeria";
 			}
-		
+		/*
 			echo "<form id='forma' method='post' onsubmit='return controllo_campi();'><br/>";
 			echo "<table>";
 			echo "<tr>";
@@ -56,8 +56,25 @@
 			echo "</tr>";
 			echo "</table>";
 			echo " <input type='submit' value='Aggiorna tabella' class='btn'/>";
-			echo "</form>";
-		
+			echo "</form>";*/
+			
+			echo('<form action="/action_page.php">
+			    <label for="fname">Numero elementi (da 1 a massimo 50):</label>
+			    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+			    <label for="lname">Citta</label>
+			    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+			    <label for="country">Tipologia ristorante</label>
+			    <select id="country" name="country">
+			      <option value="australia">Pizzeria</option>
+			      <option value="canada">Coffee</option>
+			      <option value="usa">Sushi</option>
+			    </select>
+
+			    <input type="submit" value="Submit">
+			  </form>');
+	
 			# Questo script chiama un'API e la inserisce in una tabella 
 			# Indirizzo dell'API da richiedere
 	                $indirizzo_pagina="https://api.foursquare.com/v2/venues/search?v=20161016&query=$que&limit=$lim&intent=checkin&client_id=YVMN1NGHAW4DWINOY2BHBVQTGR0RG01D4EVZ3Z3TPRN5EBE2&W&client_secret=GYRAVQCTVV5DUYI3J3OH2GKLQN5S2LEA0QIGECJ1MUFBTX2X&near=$cit";
