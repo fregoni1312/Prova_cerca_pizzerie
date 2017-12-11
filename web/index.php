@@ -56,17 +56,13 @@
 			  </tr>');
 			for($i=0; $i<$limite; $i++)
 			{	
-				echo "<tr>";
-					echo "<td>";
-					echo $dati->response->venues[$i]->name;
-					echo "</td>";
-					echo "<td>";
-					echo $dati->response->venues[$i]->location->lat;
-					echo "</td>";
-					echo "<td>";
-					echo $dati->response->venues[$i]->location->lng;
-					echo "</td>";
-				echo "</tr>";
+				echo "<tr><td>";
+				echo $dati->response->venues[$i]->name;
+				echo "</td><td>";
+				echo $dati->response->venues[$i]->location->lat;
+				echo "</td><td>";
+				echo $dati->response->venues[$i]->location->lng;
+				echo "</td></tr>";
 			}
 			echo "</table>";
 			echo curl_error($ch);
