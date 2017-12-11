@@ -80,7 +80,7 @@
 			# Stampa della tabella delle pizzerie.
 			echo('<table id="customers" align="center">
 			  <tr>
-				<th>Nome/th>
+				<th>Nome</th>
 				<th>Latitudine</th>
 				<th>Longitudine</th>
 			  </tr>');
