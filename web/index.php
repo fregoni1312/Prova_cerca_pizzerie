@@ -60,17 +60,13 @@
 			
 			echo('<form action="/action_page.php">
 			    <label for="fname">Numero elementi (da 1 a massimo 50):</label>
-			    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+			    <input type="text" id="lim" name="lim" value='$lim'>
 
 			    <label for="lname">Citta</label>
-			    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-			    <label for="country">Tipologia ristorante</label>
-			    <select id="country" name="country">
-			      <option value="australia">Pizzeria</option>
-			      <option value="canada">Coffee</option>
-			      <option value="usa">Sushi</option>
-			    </select>
+			    <input type="text" id="cit" name="cit" value='$cit'>
+			    
+			    <label for="lname">Tipologia ristorante</label>
+			    <input type="text" id="que" name="que" value='$que'>
 
 			    <input type="submit" value="Submit">
 			  </form>');
