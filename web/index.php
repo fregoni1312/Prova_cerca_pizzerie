@@ -56,33 +56,9 @@
 			echo "</tr>";
 			echo "</table>";
 			echo " <input type='submit' value='Aggiorna tabella' class='btn'/>";
-			echo "</form>";/**/
+			echo "</form>";
 			
-			echo("<form action='/action_page.php'>");
-			echo('<label for="fname">Numero elementi (da 1 a massimo 50):</label>
-			    <input type="text" id="lim" name="lim" value='$lim'>
-
-			    <label for="lname">Citta</label>
-			    <input type="text" id="cit" name="cit" value='$cit'>
-			    
-			    <label for="lname">Tipologia ristorante</label>
-			    <input type="text" id="que" name="que" value='$que'>
-
-			    <input type="submit" value="Submit">
-			  </form>');
-		/*
-		echo('<form action="/action_page.php">
-			    <label for="fname">Numero elementi (da 1 a massimo 50):</label>
-			    <input type="text" id="lim" name="lim">
-
-			    <label for="lname">Citta</label>
-			    <input type="text" id="cit" name="cit" >
-			    
-			    <label for="lname">Tipologia ristorante</label>
-			    <input type="text" id="que" name="que">
-
-			    <input type="submit" value="Submit">
-			  </form>');*/
+	
 	
 			# Questo script chiama un'API e la inserisce in una tabella 
 			# Indirizzo dell'API da richiedere
